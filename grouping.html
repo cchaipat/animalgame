@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Grouping Property</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Guess the Animal Property</h1>
+            <p>Group animals by their common property. Can you guess what it is?</p>
+        </header>
+
+        <div class="game-area">
+            <div class="group" id="group1"></div>
+            <div class="group" id="group2"></div>
+        </div>
+
+        <div class="guess-area">
+            <label for="property-guess" class="guess-label">Choose the Property:</label>
+            <select id="property-guess">
+                <option value="">Select a property</option>
+                <option value="skin_type">Skin Type (Moist or Dry)</option>
+                <option value="hair">Hair (Fur, Feathers, or None)</option>
+                <option value="scales">Scales (Yes or No)</option>
+                <option value="movement">Movement (Legs, Wings, Fins, etc.)</option>
+                <option value="birth_method">Birth Method (Live Birth or Eggs)</option>
+                <option value="birthplace">Birthplace (Land or Water)</option>
+                <option value="feeding_young">Feeding Young (Milk or No Milk)</option>
+            </select>
+            <button id="submit-btn" class="guess-btn">Submit Guess</button>
+        </div>
+
+        <div id="result" class="result-message"></div>
+        
+        <!-- Add return button -->
+        <button onclick="window.location.href='index.html'" class="return-btn">Return to Menu</button>
+    </div>
+
+    <script src="grouping.js"></script>
+</body>
+</html>

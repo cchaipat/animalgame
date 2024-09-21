@@ -1,0 +1,256 @@
+/* Global styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+/* Ensure no scrollbars appear when scaling */
+html, body {
+    overflow-x: hidden;
+}
+
+/* Game wrapper for centering content */
+.game-wrapper {
+    margin-top: 0;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+/* Game container for zoom-out effect */
+.game-container {
+    max-width: 900px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transform: scale(0.9); /* Scale down to 90% */
+    transform-origin: top center;
+    margin-top: 50px; /* Margin to compensate for scaling */
+    padding-bottom: 50px;
+}
+
+header h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+/* Animal Image Styling */
+.animal-image {
+    width: 300px; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px;
+}
+
+/* Attributes form styling */
+.attributes-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between rows */
+}
+
+/* Styles for dropdown menus (select elements) */
+/*.attributes-form select {
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    background-color: #f9fafc;
+    width: 40%;  /* Adjust width to fit the screen better */
+    margin-left: 10px;
+}*/
+
+.attribute-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.attributes-form label {
+    font-size: 1.1rem;
+    margin-right: 10px;
+    flex: 1;
+}
+
+.attributes-form select {
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    background-color: #f9fafc;
+    width: 40%; /* Adjust width as needed */
+    margin-left: 10px;
+}
+/* Guess button */
+.guess-btn, .return-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background 0.3s ease;
+}
+
+.guess-btn {
+    background-color: #4caf50;
+    color: white;
+}
+
+.guess-btn:hover {
+    background-color: #45a049;
+}
+
+
+/* Return to menu button */
+.return-btn {
+    background-color: #3498db;
+    color: white;
+    margin-top: 20px;
+}
+
+.return-btn:hover {
+    background-color: #2980b9;
+}
+
+
+/* Zoom out the entire Animal Attributes Quiz container */
+.game-container {
+    transform: scale(0.8); /* Scale down to 90% */
+    transform-origin: top center; /* Ensure scaling happens from the top center */
+    margin-top: 50px; /* Add more margin to compensate for the scaling */
+    padding-bottom: 50px; /* Ensure there's space at the bottom */
+}
+
+
+.game-area {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.group {
+    width: 40%;
+    padding: 10px;
+    background: #f9fafc;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.group img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.group img:hover {
+    transform: scale(1.1);
+}
+
+
+.guess-label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#property-guess {
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    background-color: #f9fafc;
+    width: 50%;
+    margin: 10px 0;
+}
+
+
+.result-message {
+    font-size: 1.5rem;
+    color: #4caf50;
+    margin-top: 20px;
+}
+
+.result-message.incorrect {
+    color: #e74c3c;
+}
+
+/* Styles for return button */
+.return-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.return-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Centered menu container */
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Menu button styles */
+.menu-btn {
+    display: block;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 15px 0;  /* Ensure buttons are on different lines with space */
+    border-radius: 12px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    width: 100%;  /* Adjust width to make the buttons large */
+    max-width: 400px;  /* Limit the max width for larger screens */
+    text-align: center;
+}
+
+.menu-btn:hover {
+    background-color: #45a049;
+}
+
+/* Center the View Your Score button */
+.score-summary button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.score-summary button:hover {
+    background-color: #2980b9;
+}

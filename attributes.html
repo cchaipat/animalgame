@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Attributes Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="game-container">
+            <header>
+                <h1>Animal Attributes Quiz</h1>
+                <p>Identify the attributes of each animal by selecting the correct options from the dropdowns!</p>
+            </header>
+
+            <div class="game-area">
+                <div id="animal-image-container">
+                    <img id="animal-image" src="" alt="Animal" class="animal-image">
+                </div>
+            </div>
+
+            <div class="attributes-form">
+                <div class="attribute-row">
+                    <label for="skin-type">Skin Type:</label>
+                    <select id="skin-type">
+                        <option value="">Select skin type</option>
+                        <option value="dry">Dry</option>
+                        <option value="moist">Moist</option>
+                    </select>
+                </div>
+
+                <div class="attribute-row">
+                    <label for="hair-type">Hair:</label>
+                    <select id="hair-type">
+                        <option value="">Select hair type</option>
+                        <option value="fur">Fur</option>
+                        <option value="feathers">Feathers</option>
+                        <option value="none">None</option>
+                    </select>
+                </div>
+
+                <div class="attribute-row">
+                    <label for="scales">Scales:</label>
+                    <select id="scales">
+                        <option value="">Select scales option</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+
+                <div class="attribute-row">
+                    <label for="movement">Movement:</label>
+                    <select id="movement">
+                        <option value="">Select movement type</option>
+                        <option value="4 legs">4 Legs</option>
+                        <option value="2 legs">2 Legs</option>
+                        <option value="wings">Wings</option>
+                        <option value="fins">Fins</option>
+                    </select>
+                </div>
+
+                <div class="attribute-row">
+                    <label for="birth-method">Birth Method:</label>
+                    <select id="birth-method">
+                        <option value="">Select birth method</option>
+                        <option value="live birth">Live Birth</option>
+                        <option value="eggs">Eggs</option>
+                    </select>
+                </div>
+
+                <div class="attribute-row">
+                    <label for="birthplace">Birthplace:</label>
+                    <select id="birthplace">
+                        <option value="">Select birthplace</option>
+                        <option value="land">Land</option>
+                        <option value="water">Water</option>
+                    </select>
+                </div>
+
+                <div class="attribute-row">
+                    <label for="feeding-young">Feeding Young:</label>
+                    <select id="feeding-young">
+                        <option value="">Select feeding method</option>
+                        <option value="milk">Milk</option>
+                        <option value="no milk">No Milk</option>
+                    </select>
+                </div>
+
+                <button type="button" id="submit-btn" class="guess-btn">Submit</button>
+            </div>
+
+            <div id="result" class="result-message"></div>
+
+            <!-- Return to menu button -->
+            <button onclick="window.location.href='index.html'" class="return-btn">Return to Menu</button>
+        </div>
+    </div>
+
+    <script src="attributes.js"></script>
+</body>
+</html>

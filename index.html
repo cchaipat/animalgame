@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Games Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu-container">
+        <h1>Emmalyn's Animal Games</h1>
+        <p>Select the game you want to play!</p>
+
+        <div class="menu-options">
+            <a href="attributes.html" class="menu-btn">Play Animal Attributes Quiz</a>
+            <a href="grouping.html" class="menu-btn">Play Guess the Grouping Property</a>
+        </div>
+
+        <div class="score-summary">
+            <button onclick="showScore()">View Your Score</button>
+            <p id="score-display"></p>
+        </div>
+    </div>
+
+    <script>
+        function showScore() {
+            // Logic to retrieve scores from both games and display them
+            const attributeGameScore = window.localStorage.getItem("attributeScore") || 0;
+            const groupingGameScore = window.localStorage.getItem("groupingScore") || 0;
+
+            document.getElementById("score-display").textContent = 
+                `Animal Attributes Quiz Score: ${attributeGameScore}, Grouping Property Game Score: ${groupingGameScore}`;
+        }
+    </script>
+</body>
+</html>
