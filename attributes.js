@@ -23,6 +23,16 @@ const animalsAttributes = [
         feeding_young: "milk"
     }
 ];
+
+// Function to shuffle the array
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
 let currentAnimalIndex = 0;
 let score = 0;
 
@@ -88,4 +98,8 @@ document.getElementById("submit-btn").addEventListener("click", function() {
     checkAttributes();
 });
 
-window.onload = loadAnimalAttributes;
+// Shuffle animals and start the game
+window.onload = function() {
+    shuffle(animalsAttributes); // Shuffle the array when the page loads
+    loadAnimalAttributes();
+};
