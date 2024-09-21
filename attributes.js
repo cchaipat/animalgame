@@ -15,12 +15,144 @@ const animalsAttributes = [
         name: "elephant",
         src: "images/elephant.jpg",
         skin_type: "dry",
-        hair: "none",
+        hair: "fur",
         scales: "no",
         movement: "4 legs",
         birth_method: "live birth",
         birthplace: "land",
         feeding_young: "milk"
+    },
+    // {
+    //     name: "penguin",
+    //     src: "images/penguin.jpg",
+    //     skin_type: "dry",
+    //     hair: "feathers",
+    //     scales: "no",
+    //     movement: "wings and legs",
+    //     birth_method: "eggs",
+    //     birthplace: "land",
+    //     feeding_young: "regurgitated food"
+    // },
+    {
+        name: "frog",
+        src: "images/frog.jpg",
+        skin_type: "moist",
+        hair: "none",
+        scales: "no",
+        movement: "4 legs",
+        birth_method: "eggs",
+        birthplace: "water",
+        feeding_young: "no milk"
+    },
+    // {
+    //     name: "shark",
+    //     src: "images/shark.jpg",
+    //     skin_type: "moist",
+    //     hair: "none",
+    //     scales: "yes",
+    //     movement: "fins",
+    //     birth_method: "live birth or eggs",
+    //     birthplace: "water",
+    //     feeding_young: "no milk"
+    // },
+    {
+        name: "kangaroo",
+        src: "images/kangaroo.jpg",
+        skin_type: "dry",
+        hair: "fur",
+        scales: "no",
+        movement: "4 legs",
+        birth_method: "live birth",
+        birthplace: "land",
+        feeding_young: "milk"
+    },
+    // {
+    //     name: "snake",
+    //     src: "images/snake.jpg",
+    //     skin_type: "dry",
+    //     hair: "none",
+    //     scales: "yes",
+    //     movement: "slithers",
+    //     birth_method: "eggs",
+    //     birthplace: "land",
+    //     feeding_young: "no milk"
+    // },
+    {
+        name: "dolphin",
+        src: "images/dolphin.jpg",
+        skin_type: "moist",
+        hair: "none",
+        scales: "no",
+        movement: "fins",
+        birth_method: "live birth",
+        birthplace: "water",
+        feeding_young: "milk"
+    },
+    {
+        name: "chicken",
+        src: "images/chicken.jpg",
+        skin_type: "dry",
+        hair: "feathers",
+        scales: "no",
+        movement: "2 legs",
+        birth_method: "eggs",
+        birthplace: "land",
+        feeding_young: "no milk"
+    },
+    {
+        name: "crocodile",
+        src: "images/crocodile.jpg",
+        skin_type: "dry",
+        hair: "none",
+        scales: "yes",
+        movement: "4 legs",
+        birth_method: "eggs",
+        birthplace: "land",
+        feeding_young: "no milk"
+    },
+    {
+        name: "bird",
+        src: "images/bird.jpg",
+        skin_type: "dry",
+        hair: "feathers",
+        scales: "no",
+        movement: "wings",
+        birth_method: "eggs",
+        birthplace: "land",
+        feeding_young: "no milk"
+    },
+    {
+        name: "turtle",
+        src: "images/turtle.jpg",
+        skin_type: "dry",
+        hair: "none",
+        scales: "yes",
+        movement: "4 legs",
+        birth_method: "eggs",
+        birthplace: "land",
+        feeding_young: "no milk"
+    },
+    {
+        name: "whale",
+        src: "images/whale.jpg",
+        skin_type: "moist",
+        hair: "none",
+        scales: "no",
+        movement: "fins",
+        birth_method: "live birth",
+        birthplace: "water",
+        feeding_young: "milk"
+    },
+    {
+        name: "lizard",
+        src: "images/lizard.jpg",
+        skin_type: "dry",
+        hair: "none",
+        scales: "yes",
+        movement: "4 legs",
+        birth_method: "eggs",
+        birthplace: "land",
+        feeding_young: "no milk"
     }
 ];
 
